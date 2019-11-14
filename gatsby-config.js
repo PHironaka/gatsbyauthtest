@@ -15,6 +15,17 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/app/*`] },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: "https://serene-ardinghelli-4d41fd.netlify.com",
+      },
+    },
+
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/entries/`,
