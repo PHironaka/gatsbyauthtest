@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, Link } from "gatsby"
 import SearchBox from './search'
+import Navbar from './navbar'
 import { graphql } from "gatsby"
 
 const Header = () => (
@@ -25,6 +26,7 @@ const Header = () => (
          Ellington Hammond
         </Link>
       </h1>
+      <Navbar />
         <SearchBox searchIndex={data.siteSearchIndex.index} />
       </header>
     )}
